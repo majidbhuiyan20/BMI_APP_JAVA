@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_margin="15dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:text="আপনার ওজন কত?"
+       android:textSize="30sp"
+       android:textStyle="bold"
+       android:textColor="#000000"
+
+       />
+   <EditText
+       android:id="@+id/edWeight"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Weight in Kg"
+       android:inputType="numberDecimal"
+       android:layout_marginTop="10dp"
+       android:padding="15dp"
+       android:textSize="20sp"
+       android:background="@drawable/round_edit"
+       android:textColor="#000000"
+       android:textColorHint="#C506C2"
+       />
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="আপনার উচ্চতা কত?"
+       android:textSize="30sp"
+       android:textStyle="bold"
+       android:textColor="#000000"
+       />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:orientation="horizontal"
+       >
+      <EditText
+          android:id="@+id/edFeet"
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:hint="Feet"
+          android:background="@drawable/round_edit"
+          android:inputType="numberDecimal"
+          android:layout_marginTop="10dp"
+          android:padding="15dp"
+          android:textSize="20sp"
+          android:textColor="#000000"
+          android:textColorHint="#C506C2"
+          />
+      <EditText
+          android:id="@+id/edInch"
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:hint="Inch"
+          android:inputType="numberDecimal"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/round_edit"
+          android:padding="15dp"
+          android:textSize="20sp"
+          android:layout_marginLeft="20dp"
+          android:textColor="#000000"
+          android:textColorHint="#C506C2"
+          />
+
+
+   </LinearLayout>
+
+   <Button
+       android:id="@+id/buttonCal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="BMI Calculate"
+       android:textSize="25sp"
+       android:backgroundTint="#00701F"
+       android:layout_marginTop="15dp"
+       />
+   <TextView
+       android:id="@+id/tvResult"
+       android:layout_width="match_parent"
+       android:layout_height="200dp"
+       android:text="Result Here"
+       android:textSize="25dp"
+       android:layout_marginTop="15dp"
+       android:padding="10dp"
+       android:textColor="#288306"
+       android:background="@drawable/round_edit"
+       />
+
+</LinearLayout>
